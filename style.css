@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Space+Grotesk:wght@500&display=swap");
 html {
   font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
 }
 
 * {
@@ -14,15 +19,15 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  padding: 6rem 0;
+  gap: 2.4srem;
+  padding: 6.4rem 0;
   background: #17171a;
 }
 
 .title-blog {
   text-align: center;
   font-family: Space Grotesk;
-  font-size: 3.2rem;
+  font-size: 3.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -60,23 +65,79 @@ form {
   height: 2.5rem;
 }
 
-main {
+.container-posts {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #121214;
+  gap: 4rem;
+  padding: 8rem 8rem;
 }
 
 .card-post {
-  padding: 4rem;
+  position: relative;
+  height: 21srem;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20rm;
+  padding: 4rem;
+  gap: 2rem;
   width: 121.6rem;
   border-radius: 0.8rem;
-  border: 0.2rem solid #e07b67;
 
   background: #17171a;
+}
+
+.card-post:hover {
+  border: 0.2rem solid #e07b67;
+}
+
+.post-date {
+  color: #e07b67;
+
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.icon-heart {
+  position: absolute;
+  right: 2rem;
+  top: 3.5rem;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  fill: #574ae801;
+  stroke: #e07b67;
+  stroke-width: 7;
+  transition: fill 0.3s;
+  cursor: pointer;
+}
+
+.card-post .icon-heart:hover {
+  fill: #e07b67;
+  cursor: pointer;
+}
+
+.post-title {
+  margin: 2rem 0 1.7rem 0;
+
+  color: #fff;
+  font-family: Space Grotesk;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.card-post .description {
+  color: #afabb6;
+
+  font-family: Inter;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
 }
