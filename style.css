@@ -19,6 +19,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   gap: 2.4srem;
   padding: 6.4rem 0;
   background: #17171a;
@@ -35,7 +36,7 @@ header {
   color: #ffffff;
 }
 
-.seconda-part {
+.second-part {
   color: #e07b67;
 }
 
