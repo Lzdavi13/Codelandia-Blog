@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Space+Grotesk:wght@500&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
-      <h1>Codelandia</h1>
-      <form><input type="text" /></form>
-      <main>
-        <article>
-          <p>17 de ago, 2024</p>
-          <img src="" alt="" />
-          <title>O que é liguagem de programação? Conheça as principais</title>
-          <p>
-            Uma das mais populares vertentes da tecnologia da informação, a área
-            de programação segue tendo muita demanda de trabalho justamente pela
-            velocidade com que dispositivos tecnológicos vêm avançando.
-          </p>
-        </article>
-      </main>
+      <h1 class="title-blog">Code<span class="seconda-part">lândia</span></h1>
+      <form>
+        <label for="search">
+          <img class="icon-search" src="./assets/icon-search.svg" alt="" />
+        </label>
+        <input id="search" type="text" placeholder="Pesquisar no Blog" />
+      </form>
     </header>
+
+    <main>
+      <article class="card-post">
+        <p class="post-date">17 de ago, 2024</p>
+        <img class="icon-heart" src="./assets/icon-heart.svg" alt="" />
+        <title>O que é liguagem de programação? Conheça as principais</title>
+        <p>
+          Uma das mais populares vertentes da tecnologia da informação, a área
+          de programação segue tendo muita demanda de trabalho justamente pela
+          velocidade com que dispositivos tecnológicos vêm avançando.
+        </p>
+      </article>
+    </main>
   </body>
 </html>
